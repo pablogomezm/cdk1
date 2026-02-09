@@ -1,8 +1,10 @@
-# Welcome to your CDK TypeScript project
+# CDK TypeScript project
 
-This is a blank project for CDK development with TypeScript.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Setup
+* `aws configure --profile cdk-user` to setup credentials
+* `cdk synth --profile cdk-user` to check if the code compiles the template correctly
+* `cdk diff --profile cdk-user` to check the changes that will be applied
+* `cdk deploy --profile cdk-user` to deploy the stack
 
 ## Useful commands
 
