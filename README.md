@@ -1,16 +1,19 @@
 # CDK TypeScript project
 
-## Setup
-* `aws configure --profile cdk-user` to setup credentials
-* `cdk synth --profile cdk-user` to check if the code compiles the template correctly
-* `cdk diff --profile cdk-user` to check the changes that will be applied
-* `cdk deploy --profile cdk-user` to deploy the stack
+This project uses pnpm instead of npm.
+
+## Setup credentials
+
+- Have an IAM user with programmatic access, get the access key and secret access key
+- `aws configure --profile cdk-user` to configure the aws profile with the access key and secret access key
+- `export AWS_PROFILE=cdk-user` to set the profile for the current terminal session
 
 ## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+- `pnpm run build` compile typescript to js
+- `pnpm run watch` watch for changes and compile
+- `pnpm run test` perform the jest unit tests
+- `pnpm cdk bootstrap` setup the environment to deploy CDK apps (only once per account/region)
+- `pnpm cdk diff` compare deployed stack with current state
+- `pnpm cdk synth` emits the synthesized CloudFormation template
+- `pnpm cdk deploy` deploy this stack to your default AWS account/region
